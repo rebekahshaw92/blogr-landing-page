@@ -1,0 +1,142 @@
+$lightRed: hsl(353, 100%, 62%);
+$white: hsl(0, 0%, 100%);
+$veryDarkGrayishBlue: hsl(207, 13%, 34%);
+$veryDarkGrayBlue: hsl(237, 17%, 21%);
+$veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+
+.header {
+    background-image: url('../images/bg-pattern-intro-mobile.svg'),  linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: 100vh;
+    border-bottom-left-radius: 10rem;
+    @include media-breakpoint-up(lg){
+      background-image: url('../images/bg-pattern-intro-desktop.svg'),  linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+      background-position: center 60%;
+      background-size: 400%;
+      width: 100%;
+      height: 70vh;
+    }
+   }
+
+   .hidden {
+    display: none;
+}
+
+.navbar {
+  padding-top: 3%;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+   .navbar {
+    @include media-breakpoint-up(lg) {
+    position: absolute;
+    width: 100%; 
+    z-index: 1;
+    }
+  }
+
+  // .mainHeader {
+  //   position: relative;
+  // }
+
+
+   .btn-start {
+     border-radius: 50px;
+     background-color: $white;
+     border-color: $white;
+     color: $lightRed;
+     width: 100%;
+     &:hover {
+      background-color: #ff7a85;
+      border: #ff7a85;
+      color: $white;
+     }
+   }
+   
+   .btn-learn {
+     border-radius: 50px;
+     background-color: transparent;
+     border-color: $white;
+     color: $white;
+     width: 100%;
+     &:hover {
+       background-color: $white;
+       color: $lightRed;
+     }
+   }
+
+   .btn-sign {
+       border-radius: 50px;
+       color: $white;
+       border-color: transparent;
+       background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+       width: 150px;
+       margin-bottom: 10%;
+       margin-top: 5%;
+       &:hover {
+        background-color: #ff7a85;
+        border: #ff7a85;
+        color: $white;
+       }
+       @include media-breakpoint-up(lg) {
+         background: $white;
+         color: $lightRed;
+        //  margin-right: 30%;
+       }
+   }
+   
+
+   .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+.login {
+    margin-top: 2.5rem;
+    border-top: 1px solid #e7e7e7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    @include media-breakpoint-up(lg) {
+      border-top: none;
+      margin-top: 0;
+      margin-right: 10%;
+    * {
+      float: right;
+    }
+    
+    }
+}
+
+.nav-brand {
+  padding-left: 10%;
+}
+
+   .navbar-collapse {
+       background-color: $white;
+       margin: 5%;
+       transition: transform 0.3s ease;
+       border-radius: 0.7rem;
+       box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.15);
+       @include media-breakpoint-up(lg) {
+        background-color: transparent;
+        padding-left: 5%;
+        margin: 0;
+        box-shadow: none;
+      }
+   }
+
+   .dropdown-menu {
+    background-color: #f1f1f1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+   }

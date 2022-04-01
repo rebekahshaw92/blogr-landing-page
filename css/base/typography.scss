@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$font: 'Ubuntu', sans-serif;
+$mainFont: 'Overpass', sans-serif;
+$white: hsl(0, 0%, 100%);
+$veryDarkBlue: hsl(208, 49%, 24%);
+$veryDarkGrayishaBlue: hsl(207, 13%, 34%);
+$grayishBlue: hsl(240, 2%, 79%);
+
+
+
+.mainHeader h1 {
+ font-family: $mainFont;
+ padding-top: 20%;
+ margin-left: 12%;
+ margin-right: 12%;
+ font-size: 42px;
+ color: $white;
+ @include media-breakpoint-up(lg) {
+    padding-top: 15%;
+    font-size: 50px;
+ }
+}
+
+.header p {
+    color: $white;
+    font-family: $mainFont;
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-size: 22px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 1%;
+    }
+}
+
+
+
+.nav-item {
+&:first-child {
+    margin-top: 10%;
+    @include media-breakpoint-up(lg) {
+        margin-top: 0;
+    }
+}
+}
+
+.navbar-nav {
+    li {
+        @include media-breakpoint-up(lg) {
+            margin-right: 5%;
+        }
+    a {
+    color: hsl(208, 49%, 24%);
+    @include media-breakpoint-up(lg) {
+        color: $white !important;
+        margin-right: 20%;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    }
+    }
+}
+
+.dropdown-menu { 
+    li {  
+        a {
+            @include media-breakpoint-up(lg) {
+                color: #000 !important;
+                &:hover {
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+        }
+    }
+
+
+
+.login a {
+    color: hsl(208, 49%, 24%);
+    @include media-breakpoint-up(lg) {
+        color: $white;
+    }
+}
+
+.navbar-collapse {
+    text-align: center;
+    font-weight: 600;
+    //font-size: 1.7rem;
+}
+
+.dropdown-item {
+    text-align: center;
+    font-weight: 500;
+    color: hsl(208, 49%, 24%);
+}
+
+.dropdown-menu li {
+    &:last-child {
+        margin-bottom: 2.5rem !important;
+    }
+&:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}
+
+
+  .fa-angle-down {
+      color: red;
+      @include media-breakpoint-up(lg) {
+          color: $white;
+      }
+  }
+
+  .mainDesignedText {
+      margin-top: 5%;
+  }
+
+.mainDesigned h1 {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: $mainFont;
+    color: $veryDarkBlue;
+    font-weight: 600;
+    @include media-breakpoint-up(lg) {
+        margin-top: 5% !important;
+        font-size: 34px;
+    }
+}
+
+.headerTitle {
+    @include media-breakpoint-up(lg) {
+    font-size: 24px !important;
+    }
+}
+
+.mainDesigned p, .free p, .powerful p {
+    margin-top: 5%;
+    margin-left: 10%;
+   margin-right: 10%;
+    font-size: 22px;
+    line-height: 1.7;
+    color: $veryDarkGrayishaBlue;
+    font-family: $mainFont;
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+    }
+}
+
+.services h1 {
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 40px;
+    color: $white;
+    font-family: $mainFont;
+    @include media-breakpoint-up(lg) {
+        margin-top: 20% !important;
+    }
+}
+
+.services p {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
+    font-size: 24px;
+    color: $white;
+    font-family: $mainFont;
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+    }
+}
+
+.free h1 {
+    font-family: $mainFont;
+    color: $veryDarkBlue;
+    font-family: $mainFont;
+    font-weight: 600;
+}
+
+h1.freeOpen {
+    margin-top: 10%;
+    font-family: $mainFont;
+    @include media-breakpoint-up(lg) {
+        margin-top: 700px !important;
+    }
+}
+
+.free p {
+    margin-bottom: 20%;
+    font-family: $mainFont;
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+footer h4 {
+    color: $white;
+    font-family: $mainFont;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    font-weight: 600;
+    @include media-breakpoint-up(lg) {
+        margin-top: 30%;
+    }
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5%;
+    font-family: $mainFont;
+    a {
+    color: $grayishBlue;
+    font-family: $mainFont;
+    text-decoration: none;
+    line-height: 2;
+    font-size: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 20%;
+    }
+}

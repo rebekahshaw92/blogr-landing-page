@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+      <!-- Bootstrap -->
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  
+  <title>Frontend Mentor | [Blogr]</title>
+ 
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <main>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="nav-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+          <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img id="hamburger" src="images/icon-hamburger.svg">
+            <img id="hamburgerClose" class="hidden" src="images/icon-close.svg">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Product <i onclick="myFunction(this)" class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Overview</a></li>
+                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                <li><a class="dropdown-item" href="#">Features</a></li>
+                <li><a class="dropdown-item" href="#">Integrations</a></li>
+              </ul>
+              </li>
+
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company <i onclick="myFunction(this)" class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Connect <i onclick="myFunction(this)" class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+              </ul>
+              </li>
+              </ul>
+              <div class="login">
+                <div class="row">
+                <div class="col-lg">
+                <a class="nav-link" href="#">Login</a>
+                </div>
+              <div class="col-lg">
+            <button type="button" class="btn btn-sign btn-outline-primary">Sign Up</button>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mainHeader">
+      <h1 class="text-center">A modern publishing platform</h1>
+
+      <p class="text-center">Grow your audience and build your online brand</p>
+
+      <div class="row justify-content-center">
+        <div class="col-5 col-lg-2">
+          <button type="button" class="btn btn-start btn-outline-primary">Start for Free</button>
+        </div>
+        <div class="col-5 col-lg-2">
+          <button type="button" class="btn btn-learn btn-outline-primary">Learn More</button>
+        </div>
+      </div>
+      </div>
+    </section>
+      
+    <sectiom class="mainDesigned">  
+      <h1 class="text-center">Designed for the future</h1>
+      <div class="row">
+      
+        <div class="col-lg-6 mainDesignedText">
+      <img class="designedImage mx-auto d-block" src="images/illustration-editor-mobile.svg" alt="illustartion editor">
+    
+      <h1 class="headerTitle text-center text-lg-start">Introducing an extensible editor</h1>
+
+      <p class="text-center text-lg-start">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+
+        <h1 class="headerTitle text-center text-lg-start">Robust content management</h1>
+
+        <p class="text-center text-lg-start"> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      
+
+          <!-- <div class="col-lg-2 designedDesktop">
+            <img class="designedImageDesktop" src="images/illustration-editor-desktop.svg" alt="illustartion editor">
+            </div> -->
+            </div>
+            <div class="col-lg">
+            <div class="designed"></div>
+            </div>
+            </div>
+           
+
+            </div>
+
+          
+        </section>
+ 
+
+  <sections class="services d-flex">
+    <div class="row">
+      <div class="col-lg-5">
+    <img class="mobileDesignedImage mx-auto d-block" src="images/illustration-phones.svg" alt="illustartion editor">
+    </div>
+    <div class="col-lg-7">
+    <h1 class="text-center text-lg-start">State of the Art Infrastructure</h1>
+    <p class="text-center text-lg-start">  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+  </div>
+  </div>
+  </sections>
+
+  <sections class="free">
+    <div class="free">
+    <div class="row">
+    <div class="col-lg-6">
+      <div class="freeImage">
+        <img class="desktopLaptopImage mx-auto d-block" src="images/illustration-laptop-desktop.svg" />
+        <img class="mobileLaptopImage mx-auto d-block" src="images/illustration-laptop-mobile.svg" />
+      </div>
+    </div>
+    <div class="col-lg-6">
+    <h1 class="text-center text-lg-start freeOpen">Free, open, simple</h1>
+    <p class="text-center text-lg-start">  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  
+      <h1 class="powerful text-center text-lg-start">Powerful tooling</h1>
+      <p class="text-center text-lg-start">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.</p>
+    </div>
+    </div>
+    </div>
+    </sections>
+
+<footer>
+  <div class="footerMenu">
+    <div class="row">
+      <div class="col-lg">
+  <img class="logo mx-auto d-block" src="images/logo.svg">
+  </div>
+  <div class="col-lg">
+  <h4 class="text-center text-lg-start">Product</h4>
+  <ul class="text-center text-lg-start">
+  <li><a href="#">Overview</a></li>
+  <li><a href="#">Pricing</a></li>
+  <li><a href="#">Marketplace</a></li>
+  <li><a href="#">Features</a></li>
+ <li><a href="#">Integrations</a></li>
+ </ul>
+ </div>
+<div class="col-lg">
+ <h4 class="text-center text-lg-start">Company</h4>
+ <ul class="text-center text-lg-start">
+ <li><a href="#">About</a></li>
+ <li><a href="#">Team</a></li>
+ <li><a href="#">Blog</a></li>
+ <li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="col-lg">
+
+<h4 class="text-center text-lg-start">Connect</h4>
+<ul class="text-center text-lg-start">
+<li><a href="#">Contact</a></li>
+<li><a href="#">Newsletter</a></li>
+<li><a href="#">LinkedIn</a></li>
+</ul>
+</div>
+
+  </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://rebekahshaw.com" target="_blank">Rebekah Shaw</a>.
+  </div>
+</footer>
+  <script type="text/javascript" src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </main>
+</body>
+</html>

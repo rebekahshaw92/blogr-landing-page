@@ -1,0 +1,28 @@
+$veryDarkBlackBlue: hsl(240, 10%, 16%);
+
+footer {
+    background-color: $veryDarkBlackBlue;
+    border-top-right-radius: 6rem;
+    min-height: 25rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.logo { 
+    padding-top: 40%;
+    //width: 50%;
+    @include media-breakpoint-up(lg) {
+        padding-top: 30%;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    a { 
+        color: hsl(228, 45%, 44%);
+     } 
+}
+ 
