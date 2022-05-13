@@ -5518,6 +5518,11 @@ footer ul a {
     display: block !important;
   }
 }
+@media (min-width: 1400px) {
+  .desktopLaptopImage {
+    margin-top: 40%;
+  }
+}
 
 footer {
   background-color: #25252d;

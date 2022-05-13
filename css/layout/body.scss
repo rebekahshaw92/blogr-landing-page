@@ -88,4 +88,7 @@ $veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
     margin-top: 70%;
     display: block !important;
   }
+  @include media-breakpoint-up(xxl) {
+    margin-top: 40%;
+  }
 }
